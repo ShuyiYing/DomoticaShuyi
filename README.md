@@ -17,5 +17,12 @@ Na terceira práctica de Arduino ensináronnos a acender e apagar un LED pulsand
 
 Na cuarta práctica de Arduino ensináronnos a, mediante un sensor DHT11, medir a temperatura e humidade para facer funcionar un ventilador que está conectado a un relé, para iso tivemos que crear un fluxo en Node-Red.
 
-
+FOTO DA MAQUETA.
 ![maqueta24](https://github.com/ShuyiYing/DomoticaShuyi/assets/171036001/22cf1718-635e-4a1a-a083-7a80d77e032b)
+
+FOTO DOS FLUXOS.
+
+![Nodos_Shuyi](https://github.com/ShuyiYing/DomoticaShuyi/assets/171036001/bbb4d93d-1457-4813-b6d4-3ced298eda0f)
+
+![P4_Shuyi](https://github.com/ShuyiYing/DomoticaShuyi/assets/171036001/f68d6086-48db-4010-8173-589d53c7e6d0)
+
