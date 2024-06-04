@@ -1,0 +1,281 @@
+[
+    {
+        "id": "94e9dd05655bdcfc",
+        "type": "tab",
+        "label": "Flujo Shuyi",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0c67d3c685dbd2ff",
+        "type": "mqtt out",
+        "z": "94e9dd05655bdcfc",
+        "name": "",
+        "topic": "casa/actuadores/led4",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "43c6d6fc24ad7b6d",
+        "x": 660,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "247ce02305fe9bd0",
+        "type": "ui_switch",
+        "z": "94e9dd05655bdcfc",
+        "name": "",
+        "label": "LED4",
+        "tooltip": "",
+        "group": "654b2b9f30da2b80",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [
+                "0c67d3c685dbd2ff"
+            ]
+        ]
+    },
+    {
+        "id": "060420aef3c7833f",
+        "type": "inject",
+        "z": "94e9dd05655bdcfc",
+        "name": "MensaxeBotonTrue",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 450,
+        "y": 220,
+        "wires": [
+            [
+                "a5d52744ba6e3b36"
+            ]
+        ]
+    },
+    {
+        "id": "ec22100f9dbdc99a",
+        "type": "inject",
+        "z": "94e9dd05655bdcfc",
+        "name": "MensaxeBotonFalse",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "c7207114c202717d"
+            ]
+        ]
+    },
+    {
+        "id": "a5d52744ba6e3b36",
+        "type": "mqtt out",
+        "z": "94e9dd05655bdcfc",
+        "name": "",
+        "topic": "casa/actuadores/led4",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "43c6d6fc24ad7b6d",
+        "x": 740,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c7207114c202717d",
+        "type": "mqtt out",
+        "z": "94e9dd05655bdcfc",
+        "name": "",
+        "topic": "casa/actuadores/led4",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "43c6d6fc24ad7b6d",
+        "x": 740,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "19cdb8c25e0196f9",
+        "type": "debug",
+        "z": "94e9dd05655bdcfc",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "c165f54edd2a6694",
+        "type": "mqtt in",
+        "z": "94e9dd05655bdcfc",
+        "name": "",
+        "topic": "casa/actuadores/led4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "43c6d6fc24ad7b6d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "19cdb8c25e0196f9"
+            ]
+        ]
+    },
+    {
+        "id": "501576f01c511b12",
+        "type": "mqtt in",
+        "z": "94e9dd05655bdcfc",
+        "name": "",
+        "topic": "casa/sensores/boton4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "43c6d6fc24ad7b6d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 440,
+        "y": 460,
+        "wires": [
+            [
+                "5f698d0279879267"
+            ]
+        ]
+    },
+    {
+        "id": "5f698d0279879267",
+        "type": "debug",
+        "z": "94e9dd05655bdcfc",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "43c6d6fc24ad7b6d",
+        "type": "mqtt-broker",
+        "name": "mi_mosquitto_broker",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "654b2b9f30da2b80",
+        "type": "ui_group",
+        "name": "Actuadores dixitais",
+        "tab": "5000729defeb6ba4",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5000729defeb6ba4",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
