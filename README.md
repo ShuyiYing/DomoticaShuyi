@@ -1,7 +1,5 @@
 # DomoticaShuyi
-Proxecto de TIC I
-
-Resumo. Shuyi Ying Cheng
+Proxecto de TIC I. Repositorio coa documentación do proxecto de domótica con MQTT e Node-Red.
 
 O obxectivo da primeira tarefa foi instalar no noso ordenador vello Raspberry Pi Desktop, para iso instalamos a imaxe SO de Raspberry Pi, descargamos Balena e empregamos un USB.
 
